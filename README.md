@@ -17,6 +17,7 @@ The project has following folder structure:
    		- `steps` - serenity steps
    		- `HappeoTestSuite.java` - test suite file
    	- `resources/feature/happeo` - tests written in gherkin syntax 		
+- `docker-compose.yml` docker file
 - `pom.xml` mvn file
 
 ### Description
@@ -47,12 +48,29 @@ Feature files contain parameterized test scenarios for each test case. Good appr
 
 #### Installation steps 
 1. Pull repository
-2. Install *java JDK*
+2. Install *Java JDK*
 3. Install maven (`brew install maven`)
 4. Install chromedriver (`brew install chromedriver`)
 
 ### Run tests
 Locate `HappeoTestSuite.java` file and execute.
+
+#### Run in docker
+Optionally you can install Docker and run `docker compose up`.
+Using docker in this solution we can configure execution of test in selenium hub docker 
+image. Docker compose file gives us an option to build test environment using selenium hub and chrome docker image. 
+
+Additional serenity configuration for docker usage:
+
+```
+webdriver {
+  driver = remote
+  remote {
+      url="http://localhost:4444/wd/hub"
+      driver=chrome
+  }
+}
+```
 
 ### Generating test report
 Run `mvn clean install`
@@ -67,10 +85,10 @@ Iteresting files to check:
 ### Possible improvements
 With additional time for this assignment I would  implement following steps:
 1.  **Running tests in paralell** - This would give us quicker performance (browserstack).
-2. **Using docker environment** - Using docker in this solution we can configure execution of test in selenium hub docker 
-image. Docker compose file gives us an option to build test environment using selenium hub and chrome docker image. Creating volume between this project file structure and selenium hub file system structure we can accomplish mirroring of the test results. 
+2. **Using docker environment** - For execution of tests in docker section above. Creating additional volume between this project file structure and selenium hub file system structure we can accomplish mirroring of the test results. 
 1. **Using multiple browsers** - This can help us find additional bugs in product related to specific browser.
 2. **Improvement of wait functions** - Additional checks can cover different javascript behavior.
 4. **Implementing CI/CD** - execution in cloud environment is not dependent on various local settings.
 5. **Implementing another useful features of serenity framework**, eg. screenshot taking on failure.
-
+  
+  
