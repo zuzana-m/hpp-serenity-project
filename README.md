@@ -19,6 +19,7 @@ The project has following folder structure:
    	- `resources/feature/happeo` - tests written in gherkin syntax 		
 - `docker-compose.yml` docker file
 - `pom.xml` mvn file
+- `test_log.txt` test suite console output
 
 ### Description
 Main goal of this solution is to implement given test scenarios in serenity framework by using additional BDD approach. To achieve this we use cucumber framework with scenarios written in gherkin syntax. This gives us possibility to write test scenarios in a way which is easy to read. 
@@ -32,12 +33,29 @@ This library uses Selenium web driver. For demonstration I've chosen to use chro
 
 Environment variables, like url and credentials are located in `serenity.conf` file.
 
-In test automation we deal with waiting until specific elements are loaded. To make test execution smooth we should not use static waits. Instead of this we used element waiting functions provided by `WebElementFacade`. 
+In test automation we deal with waiting until specific elements are loaded. To make test execution smooth we should not use static waits. Instead of this we use element waiting functions provided by `WebElementFacade`. 
 
 For assertions we picked Junit as our assertion library. 
 
 #### Cucumber
 Feature files contain parameterized test scenarios for each test case. Good approach to compose scenarios is to write less than 10 steps in a single scenario. For opening login page and sign in process I put these steps into *background* section. This gives us a possibility to write common steps in multiple scenarios in a single feature. I also used steps which contain multiple user actions to simplify proces. If we had more difficult test scenarios we should consider to use data tables.
+
+```gherkin
+Feature: Create post
+  In order to find items
+  As a generic user
+  I want to be able to search with Google
+
+  Background:
+    Given I open happeo login page
+    And I sign in
+
+  Scenario: Create post happy path
+    When I click channels menu button
+    And I search for channel
+    And I create post
+    Then I see new post
+```
 
 ### Install and run locally
 #### Preconditions
@@ -57,8 +75,7 @@ Locate `HappeoTestSuite.java` file and execute.
 
 #### Run in docker
 Optionally you can install Docker and run `docker compose up`.
-Using docker in this solution we can configure execution of test in selenium hub docker 
-image. Docker compose file gives us an option to build test environment using selenium hub and chrome docker image. 
+Using docker in this solution we can configure execution of test in selenium hub docker image. Docker compose file gives us an option to build test environment using selenium hub and chrome docker image. 
 
 Additional serenity configuration for docker usage:
 

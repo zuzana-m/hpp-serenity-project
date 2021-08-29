@@ -11,7 +11,7 @@ public class HappeoHomeSteps  extends GeneralSteps  {
 
     @Step
     public void openChannelMenu() {
-        clickANdWaitFor(homePage.getChannelsMenuButton(), homePage.getChannelSearchField());
+        clickAndWaitFor(homePage.getChannelsMenuButton(), homePage.getChannelSearchField());
     }
 
     @Step

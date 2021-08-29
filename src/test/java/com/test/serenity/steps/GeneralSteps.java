@@ -27,7 +27,7 @@ public class GeneralSteps extends UIInteractionSteps{
                 ExpectedConditions.urlContains(page));
     }
 
-    public void clickANdWaitFor(WebElementFacade elementToClick, WebElementFacade elementToWait) {
+    public void clickAndWaitFor(WebElementFacade elementToClick, WebElementFacade elementToWait) {
         clickOnElement(elementToClick);
         waitForCondition().until(
                 ExpectedConditions.visibilityOf(elementToWait));

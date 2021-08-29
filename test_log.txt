@@ -1,0 +1,167 @@
+[INFO ] 2021-08-29 15:25:20,258 [main] [net.thucydides.core.steps.ConsoleLoggingListener:217] -
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   /
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|
+
+ News and tutorials at http://www.serenity-bdd.info
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport
+ Learn Serenity BDD online at http://serenity-dojo.com
+-------------------------------------------------------------------------------------
+
+[INFO ] 2021-08-29 15:25:20,265 [main] [net.thucydides.core.steps.ConsoleLoggingListener:246] - Test Suite Started: Add reaction to post in channel
+[INFO ] 2021-08-29 15:25:20,290 [main] [net.thucydides.core.steps.ConsoleLoggingListener:246] - Test Suite Started: Create post
+[INFO ] 2021-08-29 15:25:20,291 [main] [net.thucydides.core.steps.ConsoleLoggingListener:246] - Test Suite Started: Create page
+[INFO ] 2021-08-29 15:25:20,520 [main] [net.thucydides.core.steps.ConsoleLoggingListener:263] -
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/
+
+
+TEST STARTED: Happy path
+-------------------------------------------------------------------(add-reaction-to-post-in-channel;happy-path)
+aug 29, 2021 3:25:20 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[INFO ] 2021-08-29 15:25:21,287 [main] [net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver:38] - Instantiating driver
+[INFO ] 2021-08-29 15:25:21,287 [main] [net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver:39] - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu, --homepage=about:blank, --no-first-run, --enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 33875
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1630243523.559][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+aug 29, 2021 3:25:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[INFO ] 2021-08-29 15:26:15,155 [main] [net.thucydides.core.steps.ConsoleLoggingListener:390] -
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/
+        /_/
+
+TEST PASSED: Happy path
+----------------------------------------------------------------------------
+[INFO ] 2021-08-29 15:26:15,160 [main] [net.thucydides.core.steps.ConsoleLoggingListener:263] -
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/
+
+
+TEST STARTED: Create post happy path
+-------------------------------------------------------------------(create-post;create-post-happy-path)
+aug 29, 2021 3:26:15 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[INFO ] 2021-08-29 15:26:15,289 [main] [net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver:38] - Instantiating driver
+[INFO ] 2021-08-29 15:26:15,289 [main] [net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver:39] - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu, --homepage=about:blank, --no-first-run, --enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 41037
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1630243576.765][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+aug 29, 2021 3:26:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[INFO ] 2021-08-29 15:26:48,150 [main] [net.thucydides.core.steps.ConsoleLoggingListener:390] -
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/
+        /_/
+
+TEST PASSED: Create post happy path
+----------------------------------------------------------------------------
+[INFO ] 2021-08-29 15:26:48,155 [main] [net.thucydides.core.steps.ConsoleLoggingListener:263] -
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/
+
+
+TEST STARTED: Happy path
+-------------------------------------------------------------------(create-page;happy-path)
+aug 29, 2021 3:26:48 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[INFO ] 2021-08-29 15:26:48,273 [main] [net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver:38] - Instantiating driver
+[INFO ] 2021-08-29 15:26:48,273 [main] [net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver:39] - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu, --homepage=about:blank, --no-first-run, --enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 15923
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1630243609.648][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+aug 29, 2021 3:26:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[INFO ] 2021-08-29 15:27:31,585 [main] [net.thucydides.core.steps.ConsoleLoggingListener:390] -
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/
+        /_/
+
+TEST PASSED: Happy path
+----------------------------------------------------------------------------
+Feature: Add reaction to post in channel
+  In order to find items
+  As a generic user
+  I want to be able to search with Google
+
+  Background:                      # src/test/resources/features/happeo/happeo_first_test.feature:6
+    Given I open happeo login page # LoginPageStepDefinitions.iOpenHappeoLoginPage()
+    And I sign in                  # GoogleLoginStepDefinitions.iSignIn()
+
+  Scenario: Happy path                # src/test/resources/features/happeo/happeo_first_test.feature:10
+    When I click channels menu button # HappeoHomeStepDefinitions.iClickChannelsMenuButton()
+    And I search for channel          # HappeoHomeStepDefinitions.iSearchForChannel()
+    And I open random post            # HappeoChannelStepDefinitions.openRandomPost()
+    And I add random reaction         # HappeoPostStepDefinitions.iAddReaction()
+    Then I see reaction on post       # HappeoPostStepDefinitions.iSeeReaction()
+
+Feature: Create post
+  In order to find items
+  As a generic user
+  I want to be able to search with Google
+
+  Background:                      # src/test/resources/features/happeo/happeo_second_test.feature:6
+    Given I open happeo login page # LoginPageStepDefinitions.iOpenHappeoLoginPage()
+    And I sign in                  # GoogleLoginStepDefinitions.iSignIn()
+
+  Scenario: Create post happy path    # src/test/resources/features/happeo/happeo_second_test.feature:10
+    When I click channels menu button # HappeoHomeStepDefinitions.iClickChannelsMenuButton()
+    And I search for channel          # HappeoHomeStepDefinitions.iSearchForChannel()
+    And I create post                 # HappeoChannelStepDefinitions.iCreatePost()
+    Then I see new post               # HappeoChannelStepDefinitions.iSeePost()
+
+Feature: Create page
+  In order to find items
+  As a generic user
+  I want to be able to search with Google
+
+  Background:                      # src/test/resources/features/happeo/happeo_third_test.feature:6
+    Given I open happeo login page # LoginPageStepDefinitions.iOpenHappeoLoginPage()
+    And I sign in                  # GoogleLoginStepDefinitions.iSignIn()
+
+  Scenario: Happy path                      # src/test/resources/features/happeo/happeo_third_test.feature:10
+    When I open pages in menu               # HappeoHomeStepDefinitions.iOpenPagesInMenu()
+    And I search for page "This Page Group" # HappeoPagesStepDefinitions.iSearchForPage(String)
+    And I click first found page            # HappeoPagesStepDefinitions.iClickFirstFoundPage()
+    And I click edit button                 # HappeoPagesStepDefinitions.iClickEditButton()
+    And I click manage button               # HappeoPagesStepDefinitions.iClickManageButton()
+    And I click three dots button           # HappeoPagesStepDefinitions.iClickThreeDotsButton()
+    And I put "Test Zuzana" for new page    # HappeoPagesStepDefinitions.iPutForNewPage(String)
+    And I click create new page button      # HappeoPagesStepDefinitions.iClickCreateNewPageButton()
+    Then I see new page                     # HappeoPagesStepDefinitions.iSeeNewPage()
+
+3 Scenarios (3 passed)
+24 Steps (24 passed)
+2m11,471s
