@@ -82,6 +82,11 @@ Iteresting files to check:
 -  `target/site/serenity/results.csv`
 -  `target/json`
 
+![IMG_0573](https://user-images.githubusercontent.com/43915675/131251593-a6c6cde6-ad5a-4c6d-9043-d5a56a725024.jpeg)
+![IMG_6305](https://user-images.githubusercontent.com/43915675/131251602-978edd13-daee-4d90-9c0b-e92afc01e9c9.jpeg)
+![IMG_9281](https://user-images.githubusercontent.com/43915675/131251608-5e6c076d-d314-4471-9103-067b7d719e89.jpeg)
+![IMG_8508](https://user-images.githubusercontent.com/43915675/131251625-eccd2239-853e-4770-bdad-be48ea162b06.jpeg)
+
 ### Possible improvements
 With additional time for this assignment I would  implement following steps:
 1.  **Running tests in paralell** - This would give us quicker performance (browserstack).
